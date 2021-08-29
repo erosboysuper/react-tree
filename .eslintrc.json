@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "prettier",
+    "prettier/react",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@typescript-eslint/rule-name": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
